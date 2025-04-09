@@ -29,3 +29,29 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons of pancakes? What is it in terms of the number of flips?
 Add your answer to this markdown file.
 
+<hr>
+
+Assuming "pancakes" correlates to each element `n`, and the number of flips correlates to the number of times `flip()` is run:
+
+The first outer loop runs in linear time through each element, but in reverse from the right side of the array to the left side.
+
+$O(n)$
+
+The inner loop also runs in linear time through each element, but in ascending order from the left to the right side of the array in order to find the "pancake" (or value) that is the largest.
+
+$O(n)$
+
+The actual flipping operation is done in constant time since it is just array concatination and reverse operations
+
+$O(1)$
+
+General:
+
+Thus the Asymptotic Runtime is:
+
+$O(n) * O(n) = \Theta(n^2)$ - (Number of pancake comparisons)
+
+The runtime in terms of number of flips is $O(n)$ since the inner loop performs the flips, and it runs in linear time, as well as in-place.
+
+- Referenced https://www.geeksforgeeks.org/pancake-sorting/ for code and runtime analysis. All code written is my own.
+
