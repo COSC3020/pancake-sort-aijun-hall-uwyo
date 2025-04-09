@@ -55,3 +55,4 @@ The runtime in terms of number of flips is $O(n)$ since the inner loop performs 
 
 - Referenced https://www.geeksforgeeks.org/pancake-sorting/ for code and runtime analysis. All code written is my own.
 
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
